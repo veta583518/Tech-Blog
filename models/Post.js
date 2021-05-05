@@ -13,15 +13,15 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    post_title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    contents: {
-      type: DataTypes.STRING,
+    post_text: {
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
-        len: [4],
+        len: [1],
       },
     },
     user_id: {

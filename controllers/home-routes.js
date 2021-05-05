@@ -1,10 +1,11 @@
 const router = require("express").Router();
 const { Post, User, Comment } = require("../models");
+const withAuth = require("../util/auth");
 
 router.get("/", (req, res) => {
   console.log(req.session);
   Post.findAll({
-    attributes: ["id", "contents", "title", "created_at"],
+    attributes: ["id", "post_title", "post_text", "created_at"],
     include: [
       {
         model: Comment,
@@ -46,7 +47,7 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "contents", "title", "created_at"],
+    attributes: ["id", "post_title", "post_text", "created_at"],
     include: [
       {
         model: Comment,
