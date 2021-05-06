@@ -8,7 +8,7 @@ router.get("/", withAuth, (req, res) => {
       // use the ID from the session
       user_id: req.session.user_id,
     },
-    attributes: ["id", "post_title", "created_at"],
+    attributes: ["id", "post_title", "post_text", "created_at"],
     include: [
       {
         model: Comment,
@@ -35,7 +35,7 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
-router.get("/edit-post/:id", withAuth, (req, res) => {
+router.get("/edit/:id", withAuth, (req, res) => {
   Post.findOne({
     where: {
       id: req.params.id,

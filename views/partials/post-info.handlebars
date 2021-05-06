@@ -1,13 +1,16 @@
-<article class="card">
-    <div class="card-header">
-        <div>
-            {{title}}
+<article class="post">
+    <div class="card">
+        <div class="card-title">
+            <a href="/dashboard/edit/{{id}}">{{post_title}}</a>
         </div>
-        <div>
-            Posted by {{user.username}} on {{format_date created_at}}
+        <div class="card-body">
+            <div>
+                <p>{{post_text}}</p>
+                <footer class="blockquote">
+                    Posted by {{user.username}} on
+                    {{format_date created_at}}
+                </footer>
+            </div>
         </div>
-    </div>
-    <div class="card-body">
-        <p class="card-text"> {{post-text}}</p>
     </div>
 </article>

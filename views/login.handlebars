@@ -1,22 +1,19 @@
 <form class="login-form">
-    <section>
-        <div>
+    <section class="login-in-wrapper">
+        <div class="title-box">
             <h2>Login</h2>
         </div>
-        <div>
+        <div class="form-controls">
             <label for="username">Username</label>
-            <input type="text" id="username" />
-        </div>
-        <div>
+            <input type="text" id="username-login" />
             <label for="password">Password</label>
-            <input type="password" id="password" />
-        </div>
-        <div>
+            <input type="password" id="password-login" />
             <button type="submit">Login!</button>
+            <div>
+                <a href="/signup">Sign up instead</a>
+            </div>
         </div>
-        <div>
-            <a href="/signup">Sign up instead</a>
-        </div>
+    </section>
 </form>
 
 <script src="/javascript/login.js"></script>

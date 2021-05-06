@@ -12,7 +12,14 @@
 </form>
 {{/if}}
 
-{{> comments post.comments}}
+<article>
+    <div class="comment-list-title">
+        <h2>Comments</h2>
+    </div>
+    <div class="comment-list">
+        {{> comments post.comments}}
+    </div>
+</article>
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

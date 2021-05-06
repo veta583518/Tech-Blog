@@ -1,14 +1,9 @@
-<div>
-    {{#each this}}
-    <section class="card">
-        <div class="card-header"></div>
+{{#each this}}
+<section class="card">
+    <div class="card-title"><span class="comment-header">{{user.username}} on {{format_date created_at}}</span></div>
 
-        <div class="card-body">
-            {{comment_text}}
-        </div>
-        <div>
-            {{user.username}} on {{format_date created_at}}
-        </div>
-    </section>
-    {{/each}}
-</div>
+    <div class="card-body">
+        <p>{{comment_text}}</p>
+    </div>
+</section>
+{{/each}}

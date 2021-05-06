@@ -1,0 +1,50 @@
+<article>
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+    <h2>
+        Edit Post
+    </h2>
+    <form class="edit-post-form">
+        <div>
+            <label for="post-title">Title</label>
+            <input id="post-title" name="post-title" type="text" value="{{post_title}}" />
+        </div>
+        <div>
+            <label for="post_text">Content</label>
+            <textarea id="post-text" name="post-text"></textarea>
+        </div>
+        <button type="submit">Update Post</button>
+        <button type="button" class="delete-post-btn">Delete Post</button>
+        <div>
+            <p>Posted by you on {{format_date post.created_at}}</p>
+            {{#if comments.length}}
+            |
+            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+            {{else}}
+            <p>This post does not have any comments yet</p>
+            {{/if}}
+        </div>
+
+    </form>
+</article>
+<article>
+    <form class="comment-form">
+        <div>
+            <textarea name="comment-body"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Add Comment</button>
+        </div>
+    </form>
+</article>
+<article>
+    <div class="comment-list-title">
+        <h2>Comments</h2>
+    </div>
+    <div class="comment-list">
+        {{> comments post.comments}}
+    </div>
+</article>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

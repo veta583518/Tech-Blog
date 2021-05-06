@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1%;
+  background-color: forestgreen;
+  padding: 5px 25px;
+}
+header h1 {
+  background-color: pink;
+  font-size: 2.5em;
+  color: forestgreen;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0.25rem;
+  width: 19rem;
+  box-shadow: 6px 6px 0 rgb(223, 151, 163);
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background-color: pink;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 22rem;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: #3486eb;
+}
+
+button {
+  background-color: forestgreen;
+  border: 0;
+  margin: 0.5rem 0 1rem 0;
+  padding: 1% 0.5%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #3486eb;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+input {
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 4px solid forestgreen;
+  border-style: inset;
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.5em;
+  margin: 0.5rem 0 1rem 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+  border-style: inset;
+}
+
+form {
+  margin-bottom: 2%;
+}
+
+label {
+  display: block;
+  font-size: 1.5em;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #3486eb;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
+}
+
+.new-post-form input {
+  min-width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
+
+.signup-form a {
+  color: white;
+  font-size: 1.5rem;
+}
+.login-form a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.new-post-btn {
+  display: flex;
+  justify-content: center;
+}
+.hide {
+  display: none;
+}
+/*Card Styles*/
+.card {
+  border: 4px solid forestgreen;
+  border-style: inset;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.card:hover .highlight {
+  color: #225ca3;
+}
+
+.card-title {
+  background-color: forestgreen;
+  margin: 0;
+  padding: 2rem;
+}
+.card-title a {
+  color: white;
+  font-size: 1.75rem;
+}
+.card-body {
+  margin: 0;
+  background-color: white;
+}
+.card-body p {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+}
+.blockquote {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 2em;
+  color: white;
+  font-weight: bolder;
+}
+
+.title-box {
+  background-color: forestgreen;
+  padding: 0.5rem 0.5rem;
+  margin-top: 0;
+  height: 100%;
+}
+
+.sign-up-wrapper,
+.login-in-wrapper {
+  border: 4px solid forestgreen;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.form-controls {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#new-post-btn {
+  width: 15rem;
+}
+.comment-header {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.comment-list {
+  margin-bottom: 1.5rem;
+}
