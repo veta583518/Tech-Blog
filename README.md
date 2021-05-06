@@ -12,9 +12,9 @@ The Tech Blog is a CMS-style blog, where you can publish articles, blog posts, a
 
 [https://shrouded-scrubland-83701.herokuapp.com/](https://shrouded-scrubland-83701.herokuapp.com/)
 
-![Login Page](/)
-![Dashboard](/)
-![Create New Post](/)
+![Login Page](https://github.com/veta583518/Tech-Blog/blob/main/public/src/assets/images/Login%20Screenshot.PNG)
+![Dashboard](https://github.com/veta583518/Tech-Blog/blob/main/public/src/assets/images/Dashboard%20Screenshot.PNG)
+![Create New Post](https://github.com/veta583518/Tech-Blog/blob/main/public/src/assets/images/New%20Post%20Screenshot.PNG)
 
 [Back to Contents](#table-of-contents)
 

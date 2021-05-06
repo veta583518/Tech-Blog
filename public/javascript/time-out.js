@@ -21,18 +21,18 @@ class AutoLogout {
   }
   // if activity clear (reset) timers
   clearTimeout() {
-    //   if (this.warnTimeout) clearTimeout(this.warnTimeout);
-    //   if (this.logoutTimeout) clearTimeout(this.logoutTimeout);
+    if (this.warnTimeout) clearTimeout(this.warnTimeout);
+    if (this.logoutTimeout) clearTimeout(this.logoutTimeout);
   }
 
   setTimeout() {
-    // this.warnTimeout = setTimeout(this.warn, 1000 * 60 * 29);
-    // this.logoutTimeout = setTimeout(this.logout, 1000 * 60 * 30);
+    this.warnTimeout = setTimeout(this.warn, 1000 * 60 * 29);
+    this.logoutTimeout = setTimeout(this.logout, 1000 * 60 * 30);
   }
 
   resetTimeout() {
-    // this.clearTimeout();
-    // this.setTimeout();
+    this.clearTimeout();
+    this.setTimeout();
   }
   // give user 1 min warning
   warn() {
