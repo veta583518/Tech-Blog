@@ -6,7 +6,10 @@ The Tech Blog is a CMS-style blog, where you can publish articles, blog posts, a
 
 ## Table of Contents
 
--[Deployed Application](#deployed-application) -[Usage](#usage) -[Acknowledgement](#acknowledgement) -[Questions](#questions)
+- [Deployed Application](#deployed-application)
+- [Usage](#usage)
+- [Acknowledgement](#acknowledgement)
+- [Questions](#questions)
 
 ## Deployed Application
 
